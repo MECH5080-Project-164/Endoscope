@@ -1,6 +1,18 @@
 # Endoscope
 Git Repository for Endoscope Project
 
+## How to Clone
+1. Clone this repository with `git clone`
+2. We are using sub-modules so do:
+  a. `git submodule init` at the root of the repository
+  b. `git submodule update` to clone the submodules into your local repository
+
+## How to Use
+
+Currently (as of 29/11/2024) we are just working in Python. To run the scripts therefore requires a Python environment with the `DynamixelSDK` package installed. See the DynamixelSDK repository for information as to how to install the SDK (alternatively see further down this README for information on installing the SDK in a virtual environment).
+
+We execute scripts with `python <script>`
+
 ## Configuration
 Requires: U2D2, U2D2 PHB, TTY Connector (x2), Dynamixel, Micro-USB to USB-A.
 Software: DynamixelSDK ([source](https://github.com/ROBOTIS-GIT/DynamixelSDK)), I used Arch Linux in WSL2 (note that this requires further configuration)
